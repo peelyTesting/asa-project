@@ -2,16 +2,20 @@ body {
     font-family: monospace;
 }
 
+.section {
+	max-width: 50%;
+	min-width: 48%;
+	height: auto;
+}
+
 .binh-minh {
-    width: 50%;
-    height: auto;
-    border: 5px;
-    float: left;
+	background-color: red;
+	padding: 10px;
+	float: right;
 }
 
 .preston {
-    width: 50%;
-    height: auto;
-    border: 5px;
-    float: right;
+	background-color: aquamarine;
+	padding: 10px;
+	float: left;
 }
