@@ -1,0 +1,17 @@
+body {
+    font-family: monospace;
+}
+
+.binh-minh {
+    width: 50%;
+    height: auto;
+    border: 5px;
+    float: left;
+}
+
+.preston {
+    width: 50%;
+    height: auto;
+    border: 5px;
+    float: right;
+}
