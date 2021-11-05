@@ -8,13 +8,13 @@ body {
 	height: auto;
 }
 
-.binh-minh {
+#binh-minh {
 	background-color: red;
 	padding: 10px;
 	float: right;
 }
 
-.preston {
+#preston {
 	background-color: aquamarine;
 	padding: 10px;
 	float: left;
