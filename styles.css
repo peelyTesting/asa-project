@@ -3,19 +3,21 @@ body {
 }
 
 .section {
-	max-width: 50%;
-	min-width: 48%;
+	box-sizing: border-box;
+	padding: 15px;
+	width: 50%;
 	height: auto;
 }
 
+#preston {
+	float: left;
+}
+
 #binh-minh {
-	background-color: red;
-	padding: 10px;
 	float: right;
 }
 
-#preston {
-	background-color: aquamarine;
-	padding: 10px;
-	float: left;
+#kminh {
+	width: 100%;
+	height: auto;
 }
