@@ -2,6 +2,10 @@ body {
     font-family: monospace;
 }
 
+#content {
+	box-sizing: border-box;
+}
+
 .section {
 	box-sizing: border-box;
 	padding: 15px;
