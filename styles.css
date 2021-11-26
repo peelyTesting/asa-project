@@ -7,13 +7,21 @@ body {
 	font-size: 30px;
 }
 
+#description {
+	text-align: center;
+	font-size: 18px;
+}
+
 #content {
 	box-sizing: border-box;
 	padding: 15px;
 	height: auto;
-	background-color: yellow;
+	background-color: lightsteelblue;
 	display: flex;
 	justify-content: center;
+	border-width: 0;
+	border-radius: 5px;
+	margin: 0 7px 0 7px;
 }
 
 .section {
@@ -22,8 +30,8 @@ body {
 	width: 50%;
 	height: auto;
 	border-style: solid;
-	border-width: 4px;
-	border-color: black;
+	border-width: 2px;
+	border-radius: 5px;
 }
 #preston {
 	background-color: lightgreen;
@@ -35,5 +43,9 @@ body {
 }
 
 #kminh {
-	background-color: red;
+	background-color: lightslategray;
+}
+
+#content p {
+	font-size: 16px;
 }
