@@ -1,5 +1,9 @@
 body {
-    font-family: monospace;
+    font-family: 'Poppins';
+}
+
+#introduction {
+	padding: 10px;
 }
 
 #title {
