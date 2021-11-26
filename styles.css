@@ -9,20 +9,7 @@ body {
 .section {
 	box-sizing: border-box;
 	padding: 15px;
-	width: 50%;
+	width: 100/3%;
 	height: auto;
-	border-radius: 5px;
-}
-
-#preston {
-	float: left;
-}
-
-#binh-minh {
-	float: right;
-}
-
-#kminh {
-	width: 100%;
-	height: auto;
+	border-width: 5px;
 }
