@@ -28,48 +28,81 @@ body {
 	margin: 0 7px 0 7px;
 }
 
-
 footer {
-	font-size: 18px;
+	font-size: 16px;
 	background-color: lightyellow;
-    margin: 30px;
+    margin: 7px;
     border-radius: 5px;
 }
 
-label {
-    display: flex;
-    align-items: center;
+#survey-form {
+    padding: 15px;
+    margin: 7px;
 }
 
-form {
-    padding: 30px;
-    margin: 30px;
-    
+#name-input {
+	margin-bottom: 15px;
 }
 
-.input-thing {
+#name {
     height: 30px;
     padding: 15px;
-    border: 1px solid #ced4da;
+	border: 0;
     border-radius: 5px;
     width: 100%;
 }
 
-.the-textarea-thing {
-    min-height: 120px;
+.input-area {
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+.input-area::placeholder {
+	color: black;
+	opacity: 0.5;
+}
+
+#comments-text-area {
+    min-height: 100px;
     padding: 15px;
     border: 1px solid #ced4da;
     width: 100%;
+	border-radius: 5px;
+	resize: none;
 }
 
-.submit-button {
-    padding: 15px;
+#submit-button {
     border: 1px solid #ced4da;
     background-color: white;
     border-radius: 5px;
-    width: 100%;
+    width: 80px;
+	height: 40px;
+	margin: 0 0 0 15px;
 }
 
+#form-content {
+	display: flex;
+}
+
+#form-column-1 {
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px 0 0;
+}
+
+#form-column-2 {
+	display: flex;
+	flex-direction: column;
+}
+
+#comments {
+	margin: 0 15px 15px 15px;
+}
+
+#radio-input {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
 
 .section {
 	box-sizing: border-box;

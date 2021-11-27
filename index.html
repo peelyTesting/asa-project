@@ -27,39 +27,30 @@
         </div>
     </div>
     <footer>
-		<h1>A form</h1>
-		<p id="description">Hello yes this is a form</p>
 		<form id="survey-form">
-			<div class="form-group">
-				<p>Name</p>
-				<input type="text" class="input-thing" placeholder="Enter your name" required>
+			<div id="form-description">
+				<h3>A form</h3>
 			</div>
-			
-			<br>
-			
-			<div class="form-group">
-				<p>How would you rate our project?</p>
-				<label>
-            		<input name="user-recommend" value="10" type="radio">10</label>
-        		<label>
-            		<input name="user-recommend" value="10" type="radio">10 (but different)</label>
-        		<label>
-            		<input name="user-recommend" value="10" type="radio">ten</label>
-			</div>
-			
-			<br>
-			
-			<div class="form-group">
-				<p>Any comments or suggestions?</p>
-        		<textarea class="the-textarea-thing" placeholder="Enter your comment here..."></textarea>
-			</div>
-			
-			<br>
-			
-			<div class="form-group">
-			 	<button type="submit">
-					Submit
-			 	</button>
+			<div id=form-content>
+				<div id="form-column-1">
+					<div id="name-input" class="form-group">
+						<label>Name</label>
+						<input type="text" class="input-area" id="name" placeholder="Name..." required>
+					</div>
+					<div id="radio-input" class="form-group">
+						<label>How would you rate our project?</label>
+						<label><input name="user-recommend" value="10" type="radio">10</label>
+        				<label><input name="user-recommend" value="10" type="radio">10 (but different)</label>
+        				<label><input name="user-recommend" value="10" type="radio">ten</label>
+					</div>
+				</div>
+				<div id="form-column-2">
+					<div id="comments"class="form-group">
+						<label>Any comments or suggestions?</label>
+        				<textarea id="comments-text-area" placeholder="Enter your comment here..." class="input-area"></textarea>
+					</div>
+					<button id="submit-button" type="submit">Submit</button>
+				</div>
 			</div>
 		</form>
 	</footer>
