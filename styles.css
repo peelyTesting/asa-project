@@ -1,5 +1,11 @@
+:root {
+	--font1: 'Poppins', monospace;
+	--translucent-black: rgba(0,0,0,0.2);
+}
+
 body {
-    font-family: 'Poppins';
+    font-family: var(--font1);
+	margin: -8px;
 }
 
 #introduction {
@@ -25,83 +31,7 @@ body {
 	justify-content: center;
 	border-width: 0;
 	border-radius: 5px;
-	margin: 0 7px 0 7px;
-}
-
-footer {
-	font-size: 16px;
-	background-color: lightyellow;
-    margin: 7px;
-    border-radius: 5px;
-}
-
-#survey-form {
-    padding: 15px;
-    margin: 7px;
-}
-
-#name-input {
-	margin-bottom: 15px;
-}
-
-#name {
-    height: 30px;
-    padding: 15px;
-	border: 0;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.input-area {
-	background-color: rgba(128, 128, 128, 0.25);
-}
-
-.input-area::placeholder {
-	color: black;
-	opacity: 0.5;
-}
-
-#comments-text-area {
-    min-height: 100px;
-    padding: 15px;
-    border: 1px solid #ced4da;
-    width: 100%;
-	border-radius: 5px;
-	resize: none;
-}
-
-#submit-button {
-    border: 1px solid #ced4da;
-    background-color: white;
-    border-radius: 5px;
-    width: 80px;
-	height: 40px;
-	margin: 0 0 0 15px;
-}
-
-#form-content {
-	display: flex;
-}
-
-#form-column-1 {
-	display: flex;
-	flex-direction: column;
-	margin: 0 15px 0 0;
-}
-
-#form-column-2 {
-	display: flex;
-	flex-direction: column;
-}
-
-#comments {
-	margin: 0 15px 15px 15px;
-}
-
-#radio-input {
-	display: flex;
-	flex-direction: column;
-	margin-top: 15px;
+	margin: 0 15px 0 15px;
 }
 
 .section {
@@ -129,4 +59,127 @@ footer {
 
 #content p {
 	font-size: 16px;
+}
+
+footer {
+	font-size: 16px;
+	background-color: rgba(165, 232, 255, 0.75);
+	border-width: 5px;
+	padding-bottom: 5px;
+}
+
+#survey-form {
+    padding: 15px;
+    margin: 15px;
+}
+
+#name-input {
+	margin-bottom: 15px;
+}
+
+input[type='text'] {
+	font-family: var(--font1);
+}
+
+#name {
+    height: 30px;
+    padding: 15px;
+	border: 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.input-area {
+	background-color: var(--translucent-black);
+	border: 0;
+	border-radius: 5px;
+}
+
+.input-area:focus{
+	background-color: var(--translucent-black);
+	border: 0;
+	border-radius: 5px;
+	outline: none !important;
+}
+
+.input-area::placeholder {
+	color: black;
+	opacity: 0.75;
+	font-family: var(--font1);
+	font-size: 14px;
+}
+
+#comments-text-area {
+    min-height: 100px;
+	width: 100%;
+    padding: 15px;
+	resize: none;
+	font-family: var(--font1);
+}
+
+#submit-button {
+    background-color: var(--translucent-black);
+    border-radius: 5px;
+	border: 0;
+    width: 80px;
+	height: 40px;
+	margin: 0 0 0 15px;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: var(--font1);
+	cursor: pointer;
+}
+
+#submit-button:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+#form-content {
+	display: flex;
+	box-sizing: border-box;
+}
+
+#form-column-1 {
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px 0 0;
+}
+
+#form-column-2 {
+	display: flex;
+	flex-direction: column;
+	max-height: auto;
+}
+
+#comments {
+	margin: 0 15px 15px 15px;
+}
+
+#radio-input {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+
+label#radio-labels {
+	cursor: pointer;
+	width: auto;
+	border-radius: 25px;
+}
+
+label#radio-labels:hover {
+	background-color: var(--translucent-black);
+}
+
+label#radio-labels input:checked {
+	background-color: var(--translucent-black);
+}
+
+input[type="radio"] {
+	background-color: var(--translucent-black);
+	color: rgba(0, 0, 0, 0.75)
+}
+
+#radio-labels span {
+	font-family: var(--font1);
+	font-size: 14px;
 }
