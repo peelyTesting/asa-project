@@ -38,6 +38,8 @@ a.menu-item:link, a.menu-item:visited {
   
 a.menu-item:hover, a.menu-item:active {
 	background-color: rgba(0,0,0,0.2);
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
 }
 
 #title {
@@ -152,22 +154,6 @@ input[type='text'] {
 	font-family: var(--font1);
 }
 
-#submit-button {
-    background-color: var(--translucent-black);
-    border-radius: 5px;
-	border: 0;
-    width: 80px;
-	height: 40px;
-	margin: 0 0 0 15px;
-	color: rgba(0, 0, 0, 0.75);
-	font-family: var(--font1);
-	cursor: pointer;
-}
-
-#submit-button:hover {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
 #form-content {
 	display: flex;
 	box-sizing: border-box;
@@ -203,6 +189,8 @@ label#radio-labels {
 
 label#radio-labels:hover {
 	background-color: var(--translucent-black);
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
 }
 
 label#radio-labels input:checked {
@@ -217,4 +205,22 @@ input[type="radio"] {
 #radio-labels span {
 	font-family: var(--font1);
 	font-size: 14px;
+}
+
+#submit-button {
+    background-color: var(--translucent-black);
+    border-radius: 5px;
+	border: 0;
+    width: 80px;
+	height: 40px;
+	margin: 0 0 0 15px;
+	color: rgba(0, 0, 0, 0.75);
+	font-family: var(--font1);
+	cursor: pointer;
+}
+
+#submit-button:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
 }
