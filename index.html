@@ -4,27 +4,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Arvo">
     <title>Coding Club ASA Project</title>
 </head>
 <body>
-    <header></header>
+    <header>
+		<h1 id="title">Coding Club Project</h1>
+		<nav id="menu-bar">
+			<a href="#kminh" class='menu-item'>KMinh</a>
+			<a href="#preston" class='menu-item'>Preston</a>
+			<a href="#binh-minh" class='menu-item'>Binh Minh</a>
+		</nav>
+	</header>
     <div id="introduction">
-        <h1 id="title">Coding Club Project</h1>
-        <p id="description">
+		<p id="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
-    <div id="content">
-        <div id="preston" class="section">
-            <p>Preston</p>
+    </p>
+	</div>
+    <div id="content-area">
+        <div id="kminh" class="content-section">
+			<div class="profile"></div>
+			<div class="article">
+				<p>Kminh</p>
+			</div>
+        </div>
+		<div id="preston" class="content-section">
+			<div class="article">
+				<p>Preston</p>
+			</div>
+			<div class="profile"></div>
 	    </div>
-        <div id="binh-minh" class="section">
-            <p>Binh Minh</p>
+        <div id="binh-minh" class="content-section">
+			<div class="profile"></div>
+			<div class="article">
+				<p>Binh Minh</p>
+			</div>
         </div>
-        <div id="kminh" class="section">
-            <p>Kminh</p>
-        </div>
+        
     </div>
     <footer>
 		<form id="survey-form">
@@ -56,7 +72,7 @@
 						<label class="form-labels">Any comments or suggestions?</label>
         				<textarea id="comments-text-area" placeholder="Enter your comment here..." class="input-area"></textarea>
 					</div>
-					<button id="submit-button" type="submit">Submit</button>
+					<button id="submit-button" type="submit"><em>Submit</em></button>
 				</div>
 			</div>
 		</form>
