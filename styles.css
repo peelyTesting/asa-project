@@ -1,6 +1,7 @@
 :root {
 	--font1: 'Poppins', monospace;
 	--translucent-black: rgba(0,0,0,0.2);
+	--light-sky-blue: rgba(165, 232, 255, 0.75);
 }
 
 html {
@@ -103,7 +104,7 @@ a.menu-item:hover, a.menu-item:active {
 
 footer {
 	font-size: 16px;
-	background-color: rgba(165, 232, 255, 0.75);
+	background-color: var(--light-sky-blue);
 	padding-bottom: 5px;
 	margin-top: -15px;
 	border-top: 10px solid red;
