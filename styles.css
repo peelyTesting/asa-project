@@ -1,7 +1,10 @@
 :root {
 	--font1: 'Poppins', monospace;
 	--translucent-black: rgba(0,0,0,0.2);
-	--light-sky-blue: rgba(165, 232, 255, 0.75);
+	--sky-blue: #5290C9;
+	--light-sky-blue: #C3E0E5;
+	--dark-blue: #1F3559;
+
 }
 
 html {
@@ -16,10 +19,11 @@ body {
 }
 
 header {
-	background-color: rgba(0,0,0,0.2);
+	background-color: var(--light-sky-blue);
 	margin-top: -30px;
 	padding: 15px;
 	font-family: 'Arvo';
+	border-bottom: 5px var(--sky-blue) solid;
 }
 
 #menu-bar {
@@ -79,13 +83,11 @@ a.menu-item:hover, a.menu-item:active {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	border-width: 1px;
-	border-style: solid;
 }
 
 .profile {
 	width: 30%;
-	background-color: brown;
+	background-color: var(--dark-blue);
 	padding: 30px;
 	box-sizing: border-box;
 	height: 300px;
@@ -93,7 +95,7 @@ a.menu-item:hover, a.menu-item:active {
 
 .article {
 	width: 70%;
-	background-color: yellow;
+	background-color: var(--light-sky-blue);
 	padding: 30px;
 	box-sizing: border-box;
 }
@@ -106,8 +108,7 @@ footer {
 	font-size: 16px;
 	background-color: var(--light-sky-blue);
 	padding-bottom: 5px;
-	margin-top: -15px;
-	border-top: 10px solid red;
+	border-top: 5px var(--sky-blue) solid;
 }
 
 #survey-form {
